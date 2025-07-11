@@ -7,10 +7,14 @@
 :root {
     --prm-color: #4E47FF;
     --t-color: #252432;
-    --d-color:#
+    --d-color: #
 }
 
 /* common style  */
+.w {
+    width: 80%;
+}
+
 .btn {
     text-decoration: none;
     font-size: 16px;
@@ -22,9 +26,11 @@
     color: #fff;
     transition: .5s;
 }
-p{
+
+p {
     color: var(--t-color);
 }
+
 /* hover efect area  */
 .btn:hover {
     color: var(--prm-color);
@@ -34,6 +40,9 @@ p{
 
 /* hover efect area ending point  */
 /* common style ending point  */
+body {
+    background-color: #F5F8FF;
+}
 
 header {
     width: 100vw;
@@ -46,7 +55,6 @@ header {
 }
 
 .banner-container {
-    width: 80%;
     margin: 0 auto;
 }
 
@@ -78,7 +86,6 @@ header {
 
 /* ------- action section styling ------- */
 .action {
-    width: 80%;
     height: 330px;
     display: flex;
     justify-content: space-between;
@@ -86,51 +93,112 @@ header {
     margin: 0 auto;
     margin-bottom: 190px;
 }
-.action-text .action-title{
+
+.action-text .action-title {
     font-size: 42px;
     font-weight: bold;
     color: var(--t-color);
     margin-bottom: 25px;
 }
-.action-text .description{
+
+.action-text .description {
     font-size: 24px;
     line-height: 30px;
     color: var(--d-color);
     margin-bottom: 25px;
 
 }
+
 .action .action-img img {
     border-radius: 48px;
 }
 
 /* -- ------- productive user section ------- -- */
-.p-user{
-    width: 80%;
+.p-user {
     height: 310px;
     margin: 0 auto;
     margin-bottom: 140px;
     text-align: center;
-    /* background-color: rgba(193, 192, 255, 0.596); */
     background-color: rgba(78, 71, 255, 0.1);
     border-radius: 24px;
 }
-.p-user h1{
+
+.p-user h1 {
     font-size: 38px;
     font-weight: bold;
     color: var(--t-color);
     padding: 50px 0;
 }
-.p-user .users{
+
+.p-user .users {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 148px;
 }
-.p-user .users h2{
+
+.p-user .users h2 {
     font-size: 80px;
     font-weight: bold;
     color: var(--prm-color);
 }
-.p-user .users p{
+
+.p-user .users p {
     font-size: 20px;
+}
+
+/* -- ------- Get in touch section ------- -- */
+.get-in-t {
+    margin: 0 auto;
+    height: 632px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F5F8FF;
+    padding: 130px 0;
+}
+
+.get-in-t h2 {
+    font-size: 97px;
+    font-weight: 700;
+    line-height: 120%;
+    color: #000000;
+}
+
+form label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    padding-bottom: 10px;
+
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form div input,
+textarea {
+    width: 500px;
+    height: 70px;
+    border: 1px solid #D6DDED;
+    border-radius: 10px;
+}
+
+form div textarea {
+    height: 140px;
+}
+
+form div input[placeholder],
+textarea {
+    font-size: 20px;
+    line-height: 150%;
+    padding: 30px 20px;
+}
+
+.form-btn {
+    display: block;
+    text-align: center;
+    width: 500px;
 }
