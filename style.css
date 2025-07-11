@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 :root {
     --prm-color: #4E47FF;
     --t-color: #252432;
-    --d-color: #252432;
+    --d-color: #9494a7;
 }
 
 /* common style  */
@@ -17,6 +18,7 @@
     line-height: 150%;
     color: var(--prm-color);
 }
+
 .w {
     width: 80%;
     margin: 0 auto;
@@ -112,7 +114,7 @@ header {
 
 /* -- ------- productive user section ------- -- */
 .p-user {
-    height: 310px;
+    height: 380px;
     margin-bottom: 140px;
     text-align: center;
     background-color: rgba(78, 71, 255, 0.1);
@@ -199,29 +201,99 @@ textarea {
 }
 
 /* ------- footer style ------- */
-footer{
+footer {
     width: 100vw;
     text-align: center;
     background-color: #ffffff;
     padding: 105px 0;
-    
+
 }
-footer .logo{
+
+footer .logo {
     font-size: 100px;
     font-weight: 800;
     line-height: 100%;
     /* margin-top: 105px; */
 }
-footer p{
+
+footer p {
     color: var(--d-color);
     /* line-height: 25px; */
     padding-bottom: 20px;
     letter-spacing: 1px;
 }
-.navigation a{
+
+.navigation a {
     text-decoration: none;
     color: var(--d-color);
     display: inline-block;
     margin-right: 45px;
-    /* margin-bottom: 105px; */
+}
+
+/* ------- what our users say------ */
+.users-opinion{
+    margin: 140px;
+}
+.users-opinion h2 {
+    font-size: 42px;
+    font-weight: bold;
+    color: var(--t-color);
+    text-align: center;
+    padding: 5px 0;
+    margin-bottom: 50px;
+
+}
+
+.users-opinion .users-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-item {
+    width: 370px;
+    height: 245px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #72727a;
+    padding: 24px;
+
+    
+}
+.user-item h3{
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--t-color);
+    padding:8px 0;
+}
+.user-item p{
+    font-size: 16px;
+    color: var(--d-color);
+    padding-bottom: 24px;
+}
+.user-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+    padding-bottom: 24px;
+    position: relative;
+}
+
+.user-info img {
+    border-radius: 50%;
+}
+.user-name h5{
+    color: #72727a;
+    font-weight: 600;
+    font-size: 15px;
+}
+.user-name p{
+    color:#b8b8be ;
+    font-size: 13px;
+}
+.user-name{
+    position: absolute;
+    left: 50px;
+    bottom: 0px;
 }
