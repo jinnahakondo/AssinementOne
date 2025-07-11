@@ -57,7 +57,7 @@ body {
 header {
     width: 100vw;
     height: 700px;
-    background-image: url(/images/Hero-bg.png);
+    background-image: url(Hero-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
