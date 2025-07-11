@@ -7,12 +7,20 @@
 :root {
     --prm-color: #4E47FF;
     --t-color: #252432;
-    --d-color: #
+    --d-color: #252432;
 }
 
 /* common style  */
+.logo {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 150%;
+    color: var(--prm-color);
+}
 .w {
     width: 80%;
+    margin: 0 auto;
+
 }
 
 .btn {
@@ -54,22 +62,12 @@ header {
     margin-bottom: 124px;
 }
 
-.banner-container {
-    margin: 0 auto;
-}
 
 .banner-navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px 0;
-}
-
-.banner-navbar h2 {
-    font-size: 34px;
-    font-weight: 600;
-    line-height: 150%;
-    color: var(--prm-color);
 }
 
 .banner-content {
@@ -90,7 +88,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     margin-bottom: 190px;
 }
 
@@ -116,7 +113,6 @@ header {
 /* -- ------- productive user section ------- -- */
 .p-user {
     height: 310px;
-    margin: 0 auto;
     margin-bottom: 140px;
     text-align: center;
     background-color: rgba(78, 71, 255, 0.1);
@@ -149,7 +145,6 @@ header {
 
 /* -- ------- Get in touch section ------- -- */
 .get-in-t {
-    margin: 0 auto;
     height: 632px;
     display: flex;
     justify-content: space-between;
@@ -201,4 +196,32 @@ textarea {
     display: block;
     text-align: center;
     width: 500px;
+}
+
+/* ------- footer style ------- */
+footer{
+    width: 100vw;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 105px 0;
+    
+}
+footer .logo{
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 100%;
+    /* margin-top: 105px; */
+}
+footer p{
+    color: var(--d-color);
+    /* line-height: 25px; */
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+}
+.navigation a{
+    text-decoration: none;
+    color: var(--d-color);
+    display: inline-block;
+    margin-right: 45px;
+    /* margin-bottom: 105px; */
 }
